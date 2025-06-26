@@ -40,7 +40,7 @@
         }
 
         .hero {
-            background-image: url('https://source.unsplash.com/1600x900/?technology,network');
+            background-image: url('{{ Storage::url($seo->og_image ?? 'images/hero.jpg') }}');
             background-size: cover;
             background-position: center;
         }
