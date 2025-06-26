@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClaimTech - Solusi Teknologi Inovatif</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .hero {
+            background-image: url('https://source.unsplash.com/1600x900/?technology,network');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+
+<body class="bg-base-100 text-base-content">
+
+    <div class="navbar bg-base-100 shadow-lg fixed top-0 left-0 right-0 z-50 px-4">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </label>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="#hero">Beranda</a></li>
+                    <li><a href="#features">Fitur</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#team">Tim Kami</a></li>
+                    <li><a href="#products">Produk</a></li>
+                    <li><a href="#testimonials">Testimoni</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+            <a href="#hero" class="btn btn-ghost text-xl font-bold">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                </svg>
+                ClaimTech
+            </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a href="#hero">Beranda</a></li>
+                <li><a href="#features">Fitur</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#team">Tim Kami</a></li>
+                <li><a href="#products">Produk</a></li>
+                <li><a href="#testimonials">Testimoni</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <label class="swap swap-rotate ml-2">
+                <input type="checkbox" class="theme-controller" value="dark" />
+                <svg class="swap-off fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                        d="M5.64,17l-.71.71a1,1,0,0,0,1.41,1.41l.71-.71a1,1,0,1,0-1.41-1.41Z M5,12a1,1,0,0,0-1-1H3a1,1,0,1,0,0,2H4A1,1,0,0,0,5,12Z M12,5a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5Z M12,19a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19Z M18.36,17a1,1,0,0,0-1.41,1.41l.71.71a1,1,0,0,0,1.41-1.41ZM17.66,7.34a1,1,0,0,0,.7-.29,1,1,0,0,0,0-1.41L17.64,5.64a1,1,0,0,0-1.41,1.41L17,7.34A1,1,0,0,0,17.66,7.34Z M21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Z" />
+                </svg>
+                <svg class="swap-on fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                        d="M21.64,13A1,1,0,0,0,20.59,12.86,8.05,8.05,0,0,1,17.22,13.59,8.15,8.15,0,0,1,9.08,5.49,8.59,8.59,0,0,1,9.33,3.49,1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Z" />
+                </svg>
+            </label>
+        </div>
+    </div>
+
+    <section id="hero" class="hero min-h-screen pt-24">
+        <div class="hero-overlay"></div>
+        <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-2xl" data-aos="fade-up">
+                <h1 class="text-5xl font-bold">Inovasi Teknologi untuk Masa Depan Bisnis Anda</h1>
+                <p class="py-6">Kami menyediakan solusi digital terdepan yang dirancang untuk meningkatkan efisiensi,
+                    produktivitas, dan pertumbuhan bisnis Anda di era modern.</p>
+                <a href="#products" class="btn btn-primary">Jelajahi Produk Kami</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="container mx-auto py-20 px-4">
+        <div class="text-center mb-12" data-aos="fade-up">
+            <h2 class="text-3xl lg:text-4xl font-bold">Kenapa Memilih ClaimTech?</h2>
+            <p class="text-base-content/70 mt-2">Platform kami dibangun dengan pilar-pilar keunggulan.</p>
+        </div>
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="card bg-base-200/50 p-6 text-center" data-aos="zoom-in">
+                <div class="flex justify-center mb-4"><svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-10 w-10 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                    </svg></div>
+                <h3 class="text-xl font-semibold">Fleksibel & Terukur</h3>
+                <p class="mt-2 text-sm text-base-content/70">Solusi yang dapat disesuaikan dengan skala dan kebutuhan
+                    unik bisnis Anda.</p>
+            </div>
+            <div class="card bg-base-200/50 p-6 text-center" data-aos="zoom-in" data-aos-delay="100">
+                <div class="flex justify-center mb-4"><svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-10 w-10 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 11c0 3.517-1.009 6.789-2.756 9.348m-2.493-2.493a9.043 9.043 0 01-1.31-4.855A9.043 9.043 0 018.75 3.302m1.996-1.996A9.043 9.043 0 0117.25 13.5m-2.493 2.493a9.043 9.043 0 01-4.855 1.31" />
+                    </svg></div>
+                <h3 class="text-xl font-semibold">Desain Responsif</h3>
+                <p class="mt-2 text-sm text-base-content/70">Tampilan optimal di semua perangkat, dari desktop hingga
+                    ponsel pintar.</p>
+            </div>
+            <div class="card bg-base-200/50 p-6 text-center" data-aos="zoom-in" data-aos-delay="200">
+                <div class="flex justify-center mb-4"><svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-10 w-10 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l-3 3m5.657 5.657l-3 3M4.343 19.657l3-3m5.657-5.657l3-3" />
+                    </svg></div>
+                <h3 class="text-xl font-semibold">Teknologi Modern</h3>
+                <p class="mt-2 text-sm text-base-content/70">Dibangun dengan teknologi terbaru untuk performa dan
+                    keamanan maksimal.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="bg-base-200 py-20 px-4">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2" data-aos="fade-right">
+                    <img src="https://source.unsplash.com/800x600/?office,teamwork" alt="Tim ClaimTech"
+                        class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left" data-aos-delay="150">
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-4">Tentang ClaimTech</h2>
+                    <p class="text-base-content/80 mb-4">
+                        ClaimTech didirikan pada tahun 2020 dengan misi untuk memberdayakan bisnis melalui transformasi
+                        digital. Kami percaya bahwa teknologi yang tepat dapat menjadi katalisator pertumbuhan yang luar
+                        biasa.
+                    </p>
+                    <p class="text-base-content/80">
+                        Tim kami terdiri dari para ahli berpengalaman di bidang pengembangan perangkat lunak, keamanan
+                        siber, dan analisis data, yang berdedikasi untuk memberikan solusi inovatif dan berkualitas
+                        tinggi kepada klien kami.
+                    </p>
+                    <a href="#contact" class="btn btn-outline btn-primary mt-6">Hubungi Kami</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="py-20 px-4">
+        <div class="container mx-auto">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl lg:text-4xl font-bold">Tim Profesional Kami</h2>
+                <p class="text-base-content/70 mt-2">Orang-orang di balik inovasi ClaimTech.</p>
+            </div>
+            <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="card items-center text-center" data-aos="fade-up">
+                    <div class="avatar">
+                        <div class="w-32 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                            <img src="https://source.unsplash.com/200x200/?woman,ceo,portrait" />
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Anya Salsabila</h2>
+                        <p>Chief Executive Officer</p>
+                    </div>
+                </div>
+                <div class="card items-center text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="avatar">
+                        <div class="w-32 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                            <img src="https://source.unsplash.com/200x200/?man,developer,portrait" />
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Bima Aditya</h2>
+                        <p>Lead Software Engineer</p>
+                    </div>
+                </div>
+                <div class="card items-center text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="avatar">
+                        <div class="w-32 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                            <img src="https://source.unsplash.com/200x200/?woman,designer,portrait" />
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Clara Wulandari</h2>
+                        <p>Head of Product Design</p>
+                    </div>
+                </div>
+                <div class="card items-center text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="avatar">
+                        <div class="w-32 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                            <img src="https://source.unsplash.com/200x200/?man,marketing,portrait" />
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Dharma Putra</h2>
+                        <p>Marketing Director</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="bg-base-200 py-20 px-4">
+        <div class="text-center mb-12" data-aos="fade-up">
+            <h2 class="text-3xl lg:text-4xl font-bold">Produk Unggulan</h2>
+            <p class="text-base-content/70 mt-2">Jelajahi rangkaian produk terlaris kami</p>
+        </div>
+        <div class="max-w-screen-xl mx-auto">
+            <div id="product-carousel"
+                class="flex overflow-x-auto gap-6 px-4 py-4 snap-x snap-mandatory scroll-smooth">
+                <div class="card w-72 flex-shrink-0 bg-base-100 shadow-md snap-center">
+                    <figure><img src="https://source.unsplash.com/300x200/?saas,dashboard"
+                            class="object-cover w-full h-40" /></figure>
+                    <div class="card-body text-center">
+                        <h2 class="card-title justify-center">Titan CRM</h2>
+                        <p class="text-sm">Manajemen hubungan pelanggan yang intuitif.</p>
+                        <div class="card-actions justify-center mt-4">
+                            <button class="btn btn-primary">Beli Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-72 flex-shrink-0 bg-base-100 shadow-md snap-center">
+                    <figure><img src="https://source.unsplash.com/300x200/?analytics,chart"
+                            class="object-cover w-full h-40" /></figure>
+                    <div class="card-body text-center">
+                        <h2 class="card-title justify-center">Helios Analytics</h2>
+                        <p class="text-sm">Platform analisis data untuk keputusan cerdas.</p>
+                        <div class="card-actions justify-center mt-4">
+                            <button class="btn btn-primary">Beli Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-72 flex-shrink-0 bg-base-100 shadow-md snap-center">
+                    <figure><img src="https://source.unsplash.com/300x200/?cloud,security"
+                            class="object-cover w-full h-40" /></figure>
+                    <div class="card-body text-center">
+                        <h2 class="card-title justify-center">Aegis Security</h2>
+                        <p class="text-sm">Solusi keamanan siber terintegrasi.</p>
+                        <div class="card-actions justify-center mt-4">
+                            <button class="btn btn-primary">Beli Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-72 flex-shrink-0 bg-base-100 shadow-md snap-center">
+                    <figure><img src="https://source.unsplash.com/300x200/?collaboration,software"
+                            class="object-cover w-full h-40" /></figure>
+                    <div class="card-body text-center">
+                        <h2 class="card-title justify-center">Orion Projects</h2>
+                        <p class="text-sm">Aplikasi manajemen proyek kolaboratif.</p>
+                        <div class="card-actions justify-center mt-4">
+                            <button class="btn btn-primary">Beli Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-20 px-4">
+        <div class="container mx-auto">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl lg:text-4xl font-bold">Apa Kata Klien Kami</h2>
+                <p class="text-base-content/70 mt-2">Kepuasan mereka adalah prioritas utama kami.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card bg-base-200/50 shadow-lg" data-aos="fade-up">
+                    <div class="card-body">
+                        <p class="text-base-content/80">"Sejak menggunakan Helios Analytics, pengambilan keputusan kami
+                            menjadi 90% lebih cepat dan akurat. Sangat direkomendasikan!"</p>
+                        <div class="flex items-center mt-4">
+                            <div class="avatar">
+                                <div class="w-12 rounded-full">
+                                    <img src="https://source.unsplash.com/100x100/?man,face,professional" />
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <div class="font-bold">Budi Santoso</div>
+                                <div class="text-xs text-base-content/60">CEO, Maju Jaya Group</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-200/50 shadow-lg" data-aos="fade-up" data-aos-delay="150">
+                    <div class="card-body">
+                        <p class="text-base-content/80">"Implementasi Titan CRM sangat mulus. Tim support ClaimTech
+                            sangat responsif dan membantu kami di setiap langkah."</p>
+                        <div class="flex items-center mt-4">
+                            <div class="avatar">
+                                <div class="w-12 rounded-full">
+                                    <img src="https://source.unsplash.com/100x100/?woman,face,business" />
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <div class="font-bold">Citra Lestari</div>
+                                <div class="text-xs text-base-content/60">Manager Operasional, Sinar Abadi</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-200/50 shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-body">
+                        <p class="text-base-content/80">"Aegis Security memberikan kami ketenangan pikiran. Sistem
+                            keamanan kami jauh lebih kuat dari sebelumnya."</p>
+                        <div class="flex items-center mt-4">
+                            <div class="avatar">
+                                <div class="w-12 rounded-full">
+                                    <img src="https://source.unsplash.com/100x100/?person,tech,professional" />
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <div class="font-bold">David Wijaya</div>
+                                <div class="text-xs text-base-content/60">IT Director, Cipta Karya</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-base-200 py-20 px-4">
+        <div class="container mx-auto">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl lg:text-4xl font-bold">Hubungi Kami</h2>
+                <p class="text-base-content/70 mt-2">Kami siap mendengar dari Anda!</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-start max-w-4xl mx-auto">
+                <div data-aos="fade-right">
+                    <h3 class="text-xl font-bold mb-4">Kirim Pesan</h3>
+                    <form class="space-y-4">
+                        <input type="text" placeholder="Nama Anda" class="input input-bordered w-full" required />
+                        <input type="email" placeholder="Email Anda" class="input input-bordered w-full"
+                            required />
+                        <textarea class="textarea textarea-bordered w-full h-32" placeholder="Pesan Anda" required></textarea>
+                        <button class="btn btn-primary">Kirim Pesan</button>
+                    </form>
+                </div>
+                <div data-aos="fade-left" data-aos-delay="150">
+                    <h3 class="text-xl font-bold mb-4">Informasi Kontak</h3>
+                    <div class="space-y-4 text-base-content/80">
+                        <p><strong>Alamat:</strong><br>Jl. Inovasi No. 123, Jakarta, Indonesia</p>
+                        <p><strong>Email:</strong><br>hello@ClaimTech.id</p>
+                        <p><strong>Telepon:</strong><br>(021) 555-0123</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer p-10 bg-neutral text-neutral-content">
+        <nav>
+            <h6 class="footer-title">Layanan</h6>
+            <a class="link link-hover">Pengembangan Software</a>
+            <a class="link link-hover">Keamanan Siber</a>
+            <a class="link link-hover">Analisis Data</a>
+            <a class="link link-hover">Konsultasi IT</a>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Perusahaan</h6>
+            <a href="#about" class="link link-hover">Tentang Kami</a>
+            <a href="#contact" class="link link-hover">Kontak</a>
+            <a class="link link-hover">Karir</a>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Legal</h6>
+            <a class="link link-hover">Syarat & Ketentuan</a>
+            <a class="link link-hover">Kebijakan Privasi</a>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Media Sosial</h6>
+            <div class="grid grid-flow-col gap-4">
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616v.064c0 2.298 1.634 4.213 3.793 4.649-.417.112-.864.172-1.328.172-.304 0-.596-.03-.884-.083.642 1.864 2.502 3.223 4.718 3.259-1.625 1.27-3.667 2.022-5.898 2.022-.382 0-.76-.022-1.13-.066 2.099 1.353 4.604 2.148 7.321 2.148 8.784 0 13.596-7.266 13.596-13.596 0-.206-.005-.412-.013-.618.932-.672 1.738-1.512 2.384-2.484z">
+                        </path>
+                    </svg></a>
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                        </path>
+                    </svg></a>
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                        </path>
+                    </svg></a>
+            </div>
+        </nav>
+    </footer>
+    <footer class="footer footer-center p-4 bg-base-300 text-base-content">
+        <aside>
+            <p>Hak Cipta © 2025 - Seluruh hak cipta dilindungi oleh ClaimTech</p>
+        </aside>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        // Inisialisasi Animate On Scroll (AOS)
+        AOS.init({
+            duration: 800, // durasi animasi
+            once: true, // animasi hanya terjadi sekali
+        });
+
+        // Skrip Carousel Produk yang Diperbaiki
+        const carousel = document.getElementById('product-carousel');
+        if (carousel) {
+            const itemWidth = carousel.querySelector('.card').offsetWidth + 24; // lebar kartu + gap
+            let scrollInterval;
+
+            function startAutoScroll() {
+                scrollInterval = setInterval(() => {
+                    // Cek jika sudah di akhir carousel
+                    if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 10) {
+                        // Kembali ke awal dengan mulus
+                        carousel.scrollTo({
+                            left: 0,
+                            behavior: 'smooth'
+                        });
+                    } else {
+                        // Geser ke item berikutnya
+                        carousel.scrollBy({
+                            left: itemWidth,
+                            behavior: 'smooth'
+                        });
+                    }
+                }, 3000); // ganti item setiap 3 detik
+            }
+
+            function stopAutoScroll() {
+                clearInterval(scrollInterval);
+            }
+
+            // Mulai auto-scroll saat halaman dimuat
+            startAutoScroll();
+
+            // Opsional: Hentikan auto-scroll saat mouse berada di atas carousel
+            carousel.addEventListener('mouseenter', stopAutoScroll);
+            carousel.addEventListener('mouseleave', startAutoScroll);
+        }
+    </script>
+
+</body>
+
+</html>
