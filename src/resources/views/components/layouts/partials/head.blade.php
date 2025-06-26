@@ -1,3 +1,21 @@
+@php
+    use Illuminate\Support\Facades\Storage;
+
+    $ogImagePath = $seo->og_image ?? null;
+
+    // Gunakan disk 'public' (default-nya Laravel pakai 'public' untuk storage:link)
+    $backgroundImageUrl = (filled($ogImagePath) && Storage::disk('public')->exists($ogImagePath))
+        ? Storage::url($ogImagePath)
+        : asset('images/hero.png');
+
+            // Logika untuk Footer Image
+    $footerImagePath = $seo->footer_image ?? null; // Pastikan Anda punya kolom 'footer_image'
+    $footerImageUrl = (filled($footerImagePath) && Storage::disk('public')->exists($footerImagePath))
+        ? Storage::url($footerImagePath)
+        : asset('images/footer.png'); // Siapkan gambar fallback ini
+
+@endphp
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -39,8 +57,9 @@
             scroll-behavior: smooth;
         }
 
-        .hero {
-            background-image: url('{{ Storage::url($seo->og_image ?? 'images/hero.jpg') }}');
+       .hero {
+            /* background-image: url('{{ Storage::url($seo->og_image ?? 'images/hero.jpg') }}'); */
+            background-image: url('{{ $backgroundImageUrl }}');
             background-size: cover;
             background-position: center;
         }
@@ -48,6 +67,12 @@
         .hero-overlay {
             background-color: rgba(0, 0, 0, 0.6);
         }
+
+        .footer-background {
+        background-image: url('{{ $footerImageUrl }}');
+        background-size: cover; /* Sesuaikan sesuai kebutuhan: 'contain', 'auto', dll. */
+        background-position: center;
+    }
     </style>
     <!-- Livewire Styles -->
     @livewireStyles

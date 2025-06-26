@@ -1,4 +1,4 @@
-<footer class="footer p-10 bg-neutral text-neutral-content">
+<footer class="footer p-10 bg-neutral text-neutral-content footer-background bg-blend-multiply">
     <nav>
         <h6 class="footer-title">Layanan</h6>
         <a class="link link-hover">Pengembangan Software</a>
